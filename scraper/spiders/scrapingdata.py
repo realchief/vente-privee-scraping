@@ -15,7 +15,7 @@ class EventItem(scrapy.Item):
 
 
 class NewEvents (scrapy.Spider):
-    name = "coinmarketcap"
+    name = "scrapingdata"
     allowed_domains = ['https://coinmarketcap.com']
     start_urls = ['https://coinmarketcap.com/all/views/all/']
 
