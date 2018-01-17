@@ -59,6 +59,7 @@ class NewEvents (scrapy.Spider):
             'Percent_24h',
             'Percent_7d'
         ]
+
         # trs = response.xpath('//table//tbody//tr[@id]')
         # for tr in trs:
         #     item = EventItem()
@@ -71,6 +72,7 @@ class NewEvents (scrapy.Spider):
         #         ]
         #         item[fields[i-1]] = value[0].replace('?', '').replace('*', '') if value else u''
         #     yield item
+
         return Request(
             url=self.API_URL,
             headers=self.headers,
