@@ -9,15 +9,9 @@ import json
 
 
 class SiteProductItem(Item):
-    Name = Field()
-    Symbol = Field()
-    MarketCap = Field()
+    Title = Field()
     Price = Field()
-    CirculatingSupply = Field()
-    Volume = Field()
-    Percent_1h = Field()
-    Percent_24h = Field()
-    Percent_7d = Field()
+    Product_Url = Field()
 
 
 class NewEvents (scrapy.Spider):
@@ -48,17 +42,11 @@ class NewEvents (scrapy.Spider):
                       )
 
     def _parse_data(self, response):
-        fields = [
-            'Name',
-            'Symbol',
-            'MarketCap',
-            'Price',
-            'CirculatingSupply',
-            'Volume',
-            'Percent_1h',
-            'Percent_24h',
-            'Percent_7d'
-        ]
+        # fields = [
+        #     'Title',
+        #     'Price',
+        #     'Product_Url'
+        # ]
 
         # trs = response.xpath('//table//tbody//tr[@id]')
         # for tr in trs:
@@ -93,17 +81,32 @@ class NewEvents (scrapy.Spider):
             prods.append(store.get('store_url'))
 
         for prod in prods:
-            prod_item = SiteProductItem()
-            req = Request(
-                prod,
-                callback=self.parse_product,
-                meta={
-                    "product": prod_item,
-                },
-                dont_filter=True,
-            )
-            yield req
+            yield Request(url=prod, callback=self.parse_product)
 
     def parse_product(self, response):
-        data = response.body
-        return data
+        prod_item = SiteProductItem()
+        title = self._parse_title(response)
+        price = self._parse_price(response)
+        url = self._parse_url(response)
+        prod_item['Title'] = title
+        prod_item['Price'] = price
+        prod_item['Product_Url'] = url
+        return prod_item
+
+    @staticmethod
+    def _parse_title(response):
+        title = response.xpath('//ul[@class="thumb-container"]/li[@class="item first"]/a/@href').extract()
+
+        return title
+
+    @staticmethod
+    def _parse_price(response):
+        price = response.xpath('//ul[@class="thumb-container"]/li[@class="item first"]/a/@href').extract()
+        return price
+
+    @staticmethod
+    def _parse_url(response):
+        url = response.xpath('//ul[@class="thumb-container"]/li[@class="item first"]/a/@href').extract()
+
+        return url
+
