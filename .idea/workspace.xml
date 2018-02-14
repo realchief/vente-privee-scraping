@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5dd9561-a4c7-4234-a007-1952b8276491" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/.idea/preferred-vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/.idea/scraper.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/items.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/middlewares.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/pipelines.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/spiders/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/spiders/result.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraper/spiders/scrapingdata.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapy.cfg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scrapy-mysql.iml" afterPath="$PROJECT_DIR$/.idea/scrapy-mysql.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ventepriveeScraping/ventepriveeScraping/spiders/scrapingdata.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,10 +12,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="scrapingdata.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ventepriveeScraping/ventepriveeScraping/spiders/scrapingdata.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ventepriveeScraping/ventepriveeScraping/spiders/scrapingdata.py" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -74,12 +81,19 @@
             <path>
               <item name="vente-privee-Scraping" type="b2602c69:ProjectViewProjectNode" />
               <item name="vente-privee-Scraping" type="462c0819:PsiDirectoryNode" />
-              <item name="scraper" type="462c0819:PsiDirectoryNode" />
+              <item name="ventepriveeScraping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vente-privee-Scraping" type="b2602c69:ProjectViewProjectNode" />
               <item name="vente-privee-Scraping" type="462c0819:PsiDirectoryNode" />
-              <item name="scraper" type="462c0819:PsiDirectoryNode" />
+              <item name="ventepriveeScraping" type="462c0819:PsiDirectoryNode" />
+              <item name="ventepriveeScraping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vente-privee-Scraping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vente-privee-Scraping" type="462c0819:PsiDirectoryNode" />
+              <item name="ventepriveeScraping" type="462c0819:PsiDirectoryNode" />
+              <item name="ventepriveeScraping" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -120,8 +134,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="-4" width="1633" height="1054" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25582862" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25582862" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -169,6 +184,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ventepriveeScraping/ventepriveeScraping/spiders/scrapingdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
